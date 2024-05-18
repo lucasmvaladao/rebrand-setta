@@ -12,8 +12,8 @@
 header{
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 115px;
-    padding-right: 115px;
+    padding-left: 10%;
+    padding-right:10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@ header{
 
 header img{
     width: 80px;
-    height: 80px;
+    height: 100%;
 }
 
 nav{
@@ -46,8 +46,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 115px;
-    padding-right: 115px;
+    padding-left: 10%;
+    padding-right:10%;
     justify-content: space-between;
 }
 
@@ -79,11 +79,12 @@ main p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 115px;
-    padding-right: 115px;
+    padding-left: 10%;
+    padding-right:10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
 }
 
 .info-sobre{
@@ -100,7 +101,7 @@ main p{
     line-height: 74px; /* 134.545% */
 }
 
-.info-sobre p{
+.info-sobre >  p{
     color: #323842;
     font-family: Inter;
     font-size: 20px;
@@ -122,6 +123,9 @@ main p{
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0px 0px 2px 0px rgba(23, 26, 31, 0.12), 0px 4px 9px 0px rgba(23, 26, 31, 0.11);
+    z-index: 1;
+    position: relative;
+    left: 30px;
 }
 
 .infos-valores{
@@ -160,4 +164,86 @@ main p{
 .cor2{
     color:#8CB4EE;
     background: #032347;
+}
+
+.service{
+
+    padding-top: 50px;
+
+    margin-left: 10%;
+    margin-right:10%;
+ 
+}
+
+.service-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-title h1{
+    color: #323842;
+    text-align: center;
+    font-family: Epilogue;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px; /* 141.667% */
+}
+
+.service-title p{
+    color: #9095A0;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+}
+.cards{
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    justify-content: center;
+    gap: 35px;
+    
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    max-width: 310px;
+    width: 100%;
+    height: 450px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 0px 5px 0px rgba(23, 26, 31, 0.12);
+}
+
+.product h1{
+    color: #032347;
+    font-family: Epilogue;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+}
+
+.product p{
+    color: #032347;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+.product_description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
 }
