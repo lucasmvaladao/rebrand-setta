@@ -8,6 +8,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 header {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -16,6 +21,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    background-color: white;
+    height: 4rem;
+    width: 100%;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.20);
+    z-index: 2;
 }
 
 header img {
@@ -61,11 +72,11 @@ nav a:hover::before {
 
 main{
     width: auto;
-    height: 450px;
     background-color: #8CB4EE;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;  
+    padding-top: 80px;
     padding-left: 10%;
     padding-right:10%;
     justify-content: space-between;
@@ -104,7 +115,8 @@ main p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+
+    padding-top:    4em;
 }
 
 .info-sobre{
@@ -145,7 +157,12 @@ main p{
     box-shadow: 0px 0px 2px 0px rgba(23, 26, 31, 0.12), 0px 4px 9px 0px rgba(23, 26, 31, 0.11);
     z-index: 1;
     position: relative;
+    top: 150px;
     left: 30px;
+}
+
+.us{
+display: flex;
 }
 
 .infos-valores{
@@ -190,7 +207,7 @@ main p{
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 80px;
     gap: 50px;
     margin-left: 10%;
     margin-right:10%;
@@ -395,7 +412,7 @@ footer{
     line-height: 30px; /* 150% */
 }
 
-.footer-description  p{
+.footer-description  p , a{
     color: #DEE1E6;
     font-family: Inter;
     font-size: 14px;
@@ -414,6 +431,7 @@ footer{
     line-height: 30px; /* 150% */
 }
 
+
 .line{
     width: 100%;
     height: 1px;
@@ -430,4 +448,94 @@ footer{
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 157.143% */
+}
+
+@media (min-width: 1440px) {
+
+    header {
+        height: 6rem;
+        width: 100%;
+    }
+ 
+    header img {
+        width: 100px;
+        height: 100%; 
+    }
+
+    nav a{
+        font-size: 24px;
+    }
+
+    main{
+        padding-top: 110px;
+        padding-left: 15%;
+        padding-right:15%;
+    }
+
+    main h1{
+        font-size: 34px;
+        width: 600px;
+        
+    }
+    
+    main p{
+        font-size: 16px;
+        width: 600px;
+    }
+
+    .main-more img{
+        width: 700px;
+    } 
+
+    .sobre{
+        padding-top: 6rem;
+        padding-left: 15%;
+        padding-right:15%;
+    }
+
+    .service{
+        padding-top: 6rem;
+    }
+
+    .info-sobre h1{
+        color: #323842;
+        font-family: Epilogue;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+
+    }
+    
+    .info-sobre >  p{
+        font-size: 20px;
+        width: 450px;
+    }
+
+    svg{
+        width: 450px;
+    }
+
+    .trabalho{
+        width: 450px;
+    }
+    
+    .valores{
+        width: 250px;
+        height: 300px;
+        top: 200px;
+        left: 30px;
+    }
+
+    .infos-valores{
+        height: 80px;
+        width: 200px;  
+    }
+    
+    .valores h1{
+        font-size: 26px;
+    }
+
+    .infos-valores p{
+        font-size: 20px;
+    }
 }
